@@ -8,7 +8,15 @@
 int my_compute_power_it(int nb, int p)
 {
     int value = nb;
-    for (int i = 1; i < p; i++) {
-        value = value * nb;
+
+    if (p == 1) {
+        value = 1;
+    } else if (p < 0) {
+        value = 0;
+    } else {
+        for (int i = 1; i < p; i++) {
+            value = value * nb;
+        }
     }
+    return (value);
 } 
