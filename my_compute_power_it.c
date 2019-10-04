@@ -19,4 +19,4 @@ int my_compute_power_it(int nb, int p)
         }
     }
     return (value);
-} 
+}
