@@ -9,6 +9,9 @@ int my_compute_power_it(int nb, int p)
 {
     int value = nb;
 
+    if (p == 0) {
+        return (1);
+    }
     if (p == 1) {
         value = 1;
     } else if (p < 0) {
