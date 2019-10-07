@@ -12,12 +12,10 @@ int my_compute_power_it(int nb, int p)
     if (p == 0) {
         return (1);
     }
-    if (p == 1) {
-        value = 1;
-    } else if (p < 0) {
+    if (p < 0) {
         value = 0;
     } else {
-        for (int i = 1; i < p; i++) {
+        for (int i = 0; i < p; i++) {
             value = value * nb;
         }
     }
