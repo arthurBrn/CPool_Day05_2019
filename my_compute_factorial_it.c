@@ -12,7 +12,7 @@ int my_compute_factorial_it(int nb)
     if (nb == 0)
         return (1);
 
-    if (nb >= 0 && nb < 12) {
+    if (nb >= 0 && nb < 13) {
         for (int i=1;i < nb; i++) {
             value = value * (nb -i);
         }
