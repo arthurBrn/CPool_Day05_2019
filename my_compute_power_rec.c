@@ -14,4 +14,5 @@ int my_compute_power_rec(int nb, int p)
     else
         if (p >= 0)
             return (nb * my_compute_power_rec(nb, p-1));
+    return (0);
 }
